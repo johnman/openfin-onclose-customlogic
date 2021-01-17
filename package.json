@@ -1,7 +1,7 @@
 {
-  "name": "openfin-clear-on-application-close",
+  "name": "openfin-onclose-customlogic",
   "version": "1.0.0",
-  "description": "An example of listening to the close event to clear some data when the application closes so it does not exist when restarted.",
+  "description": "An example of how to add some custom logic when a platform closes or a window application. The demo uses preload scripts but this could be part of the application logic.",
   "main": "index.html",
   "scripts": {
     "start": "serve"
@@ -10,9 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/johnman/openfin-csb-template.git"
   },
-  "keywords": [
-    "openfin"
-  ],
+  "keywords": [],
   "author": "OpenFin",
   "license": "MIT",
   "bugs": {

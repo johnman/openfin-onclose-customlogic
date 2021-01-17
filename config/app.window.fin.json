@@ -4,15 +4,15 @@
   "startup_app": {
     "name": "OpenFin Cache Clear Window Demo",
     "description": "",
-    "url": "https://4p7xj.csb.app/",
+    "url": "https://9onyq.csb.app/",
     "uuid": "openfin-window-cacheclear",
     "autoShow": true,
     "defaultHeight": 800,
     "defaultWidth": 800,
-    "applicationIcon": "https://4p7xj.csb.app/favicon.ico",
+    "applicationIcon": "https://9onyq.csb.app/favicon.ico",
     "preloadScripts": [
       {
-        "url": "https://4p7xj.csb.app/preload/app-clear-cache-preload.js"
+        "url": "https://9onyq.csb.app/preload/app-clear-cache-preload.js"
       }
     ]
   },

@@ -28,6 +28,10 @@
       specific and doesn't have to clear data (it could be some other on close
       logic).
 
+The codesandbox can be found here: https://codesandbox.io/s/openfin-onclose-customlogic-9onyq
+
+Or you can go direct to the url if you just want to launch instead of looking at the code: https://9onyq.csb.app/
+
 Some things you will need to update if you want to run your own copy or if you have forked this from codesandbox:
 
 In config/app.platform.fin.json, config/app.window.fin.json update:

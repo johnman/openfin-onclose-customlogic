@@ -7,11 +7,11 @@
   },
   "platform": {
     "uuid": "platform-cache-management-example",
-    "applicationIcon": "https://4p7xj.csb.app/favicon.ico",
+    "applicationIcon": "https://9onyq.csb.app/favicon.ico",
     "autoShow": false,
     "preloadScripts": [
       {
-        "url": "https://4p7xj.csb.app/preload/platform-clear-cache-preload.js"
+        "url": "https://9onyq.csb.app/preload/platform-clear-cache-preload.js"
       }
     ]
   },
@@ -38,7 +38,7 @@
                   "type": "component",
                   "componentName": "view",
                   "componentState": {
-                    "url": "https://4p7xj.csb.app/",
+                    "url": "https://9onyq.csb.app/",
                     "name": "component_1584387105285"
                   },
                   "isClosable": true,

@@ -1,0 +1,28 @@
+{
+  "name": "openfin-clear-on-application-close",
+  "version": "1.0.0",
+  "description": "An example of listening to the close event to clear some data when the application closes so it does not exist when restarted.",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnman/openfin-csb-template.git"
+  },
+  "keywords": [
+    "openfin"
+  ],
+  "author": "OpenFin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnman/openfin-csb-template/issues"
+  },
+  "homepage": "https://github.com/johnman/openfin-csb-template#readme",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  },
+  "dependencies": {
+    "@types/openfin": "49.0.0"
+  }
+}

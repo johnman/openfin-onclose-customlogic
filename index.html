@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>On Close Logic Example</title>
+    <script src="components/openfin-link.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body style="background-color: white;">
+    <h1>How do I run logic when an OpenFin Application is being closed?</h1>
+    <p>
+      You are running OpenFin Runtime version:
+      <span id="openfin-version"></span>
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fins://./config/app.platform.fin.json"
+        >Launch OpenFin Platform Application</openfin-link
+      >
+    </p>
+    <p>
+      <openfin-link
+        show-in-fin="false"
+        href="fins://./config/app.window.fin.json"
+        >Launch OpenFin Windowed Application</openfin-link
+      >
+    </p>
+    <p>
+      This example shows how you can perform an action when an OpenFin window
+      application or platform closes. I have used preload scripts (see the
+      config files in the config folder) to load this logic without requiring
+      changes to the window application main page or the need for a custom
+      platform provider.
+    </p>
+    <p>
+      The logic from these files in the preload folder can be added to the
+      script of the main window in a window application or a custom provider for
+      the platform.
+    </p>
+    <p>
+      Another important thing to point out is the runtime arguments section of
+      the config files. This config file specifies some args: a security realm
+      so that this application is isolated from other applications and the mesh
+      argument so that the application can still communicate on the message bus
+      with others.
+    </p>
+    <p>
+      You can use the <b>Add Settings</b> in the browser or once you have
+      launched an OpenFin window application or platform using the links above.
+    </p>
+    <p>
+      In all cases a cookie with a time entry will be added (which should expire
+      in a day) and a localstorage entry will be added.
+    </p>
+    <p>
+      The difference is when you close the browser or re-open the application.
+      The browser will still have both values but the OpenFin applications will
+      not. We clear everything but the logic in the preload could be more
+      specific and doesn't have to clear data (it could be some other on close
+      logic).
+    </p>
+    <p><button id="add-settings">Add Settings</button></p>
+    <p>Cookie Setting: <span id="cookie-setting">Not Set</span></p>
+    <p>LocalStorage Setting: <span id="localstorage-setting">Not Set</span></p>
+  </body>
+</html>
